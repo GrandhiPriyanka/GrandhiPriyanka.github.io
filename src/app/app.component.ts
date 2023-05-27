@@ -41,7 +41,7 @@ export class AppComponent implements OnInit, OnDestroy {
   navigateToWishes() {
     this.showRouter = true;
     this.showCards = false;
-    this.router.navigateByUrl('wishes');
+    // this.router.navigateByUrl('wishes');
   }
   ngOnDestroy(): void {
     this.showCards = false;
