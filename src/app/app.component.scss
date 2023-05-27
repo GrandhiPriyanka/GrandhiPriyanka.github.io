@@ -1,3 +1,30 @@
-.container{
+.container {
     text-align: center;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 35px;
+    font-family: cursive;
+}
+
+.imgStyle {
+    width: calc(100vw - 20px);
+    height: calc(100vh - 80px);
+}
+
+.arrow {
+    width: 80px;
+}
+
+.arrow-container {
+    text-align: right;
+    width: calc(100vw - 20px);
+}
+
+.card{
+    margin: 20px 0;
 }

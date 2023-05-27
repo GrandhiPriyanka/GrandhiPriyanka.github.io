@@ -1,3 +1,188 @@
 <div class="container">
-  <img src="assets/images/birthday_img.gif" />
+  <div class="col-lg-6 col-4" *ngIf="showLoader && !showCards">
+    <img class="center" src="assets/images/loading_love.png" />
+  </div>
+  <div class="col-lg-6 col-4" *ngIf="!showLoader && !showCards && !showRouter">
+    <img class="imgStyle" src="assets/images/beach-sea.jpg" />
+    <div class="centered">Life of Adi</div>
+    <div class="arrow-container">
+      <img class="arrow" src="assets/images/love-arrow.png" (click)="navigateToProfile()" />
+    </div>
+  </div>
+</div>
+<div class="container" *ngIf="showCards && !showLoader">
+  <div class="row">
+    <div class="card col-lg-4 col-md-6 col-12">
+      <img class="card-img-top" src="assets/images/barasala.jpg" alt="Card image cap">
+      <div class="card-body">
+        <p class="card-text">The story started on 28 May 1996. Even before I born my soul found it's partner. It's like
+          a festival for Kotha's family. Anand rao garu and Rama Ratnam garu are on cloud nine 😍. Mr & Mrs Vinod Kumar
+          was very cheerful 😊. Because a cute little boy is borned on that day. He is named as Kotha Venkata Aditya
+          Prasanna 😜</p>
+      </div>
+    </div>
+    <div class="card col-lg-4 col-md-6 col-12">
+      <img class="card-img-top" src="assets/images/annaprasana.jpg" alt="Card image cap">
+      <div class="card-body">
+        <p class="card-text">This little boy is as cute as moon. He started looking each other, crying and making
+          sounds. Then within few months he started crawling. Now it's time for "Annaprasana" 🍲😋. Soon after eating
+          Pongal, the real task begins. It is nothing but picking an object which represents a prominent highlight in
+          their future. Wait a minute... Guess what our hero picked 🤔. Okay I'll tell you, One hand with book 📖 and
+          pen 🖊️ and other hand full of gold 🧈. Means now he will become a great scholar and earns handful of money 😜
+        </p>
+      </div>
+    </div>
+    <div class="card col-lg-4 col-md-6 col-12">
+      <img class="card-img-top" src="assets/images/first-birthday.jpg" alt="Card image cap">
+      <img class="card-img-top" src="assets/images/Sreelu-barasala.jpg" alt="Card image cap">
+      <div class="card-body">
+        <p class="card-text">This cute little boy became as notty as Krishna. He learned walking with help of parents
+          and grand parents and started making small steps which is eye candy for them. Soon after he became 1, birthday
+          bash started in the presence of family, relatives and friends 🎂🎁🎀✨. He is a prince in the family and
+          everything he asks will be there infront of him 😶‍🌫️. But unfortunetly god decided to give compitition to
+          him in the house, so he gave a brother to him 😝. He plays, fights, guides him and throws tantrums on him for
+          his mistakes 😒.
+        </p>
+      </div>
+    </div>
+    <div class="card col-lg-4 col-md-6 col-12">
+      <img class="card-img-top" src="assets/images/toy.jpg" alt="Card image cap">
+      <div class="card-body">
+        <p class="card-text">Now our hero is in childhood stage. Whenever he gets a new toy he will be in full of joy
+          and excitement 🤩. He will starts playing with it even it is mid night 🤾‍♂️. While playing suddenly a hidden
+          scientists in him wakes up and wants to find how it was built 🤔. He dismantles everything but don't know how
+          to fix it again and he will get scoldings from his father 😢. I'll tell you an example how mischievous our
+          hero is... our boy and his brother brought a rented cycle to ride 🚴 and wants to ride it each for sometime,
+          but our cunning boy misleads his brother saying to look the clock on hours hand instead of minutes hand ⏰. As
+          his poor brother didn't know how to see time so he is looking when that hours hand will move, when his grand
+          mother got to know all this thing she scolds our hero 😜. </p>
+      </div>
+    </div>
+    <div class="card col-lg-4 col-md-6 col-12">
+      <img class="card-img-top" src="assets/images/school.jpeg" alt="Card image cap">
+      <div class="card-body">
+        <p class="card-text">It's time for our boy to go to school 🏫. He is very punctual and go to school on time. He
+          studies well and scores good marks except maths. Maths is like a devil for him 👹. In summer holidays he goes
+          to his grand mother's home and plays with neighbour kids, eats the favourite food cooked by grand ma, plays
+          with the toys bought by mamayya and enjoys fully. But he can't stay out of Macherla for more days. He wants
+          his grand father and grand mother to be besides him always. Even if they went to a pilgrimage tour he will get
+          fever and gets them back, he loves them to that extent ❤️.
+        </p>
+      </div>
+    </div>
+    <div class="card col-lg-4 col-md-6 col-12">
+      <img class="card-img-top" src="assets/images/bhashyam.jpg" alt="Card image cap">
+      <div class="card-body">
+        <p class="card-text">Everything went well so far, but unexpectedly for better education he has to leave Macherla
+          and went to Vijayawada to study in Bhashyam 🏫. He felt so sad to leave his parents and grand parents and stay
+          away from them. But he stood strong and continue to study out of town.
+        </p>
+      </div>
+    </div>
+    <div class="card col-lg-4 col-md-6 col-12">
+      <img class="card-img-top" src="assets/images/sri-chaitanya.jpg" alt="Card image cap">
+      <div class="card-body">
+        <p class="card-text">Now our little boy enters into teenage. He is studying intermediate in Sri Chaitanya Junior
+          College. The college and the hostel resembles like a jail, yet our hero manages to find joy. He bunks the
+          college, climbs the walls 🧗‍♂️ and chill out outside with friends. Weekend outings with family and holidays
+          he will come to Macherla and spends time with family and friends. Everything is going very smoothly and
+          happily but sadnely he came to know that his grand mother is suffering from cancer and is in advance stage.
+          She had a good treatment, recovered but again effected with cancer and passed away. He felt so sad 😭. Out of
+          all these he manages to score good marks in inter but fails to clear EAMCET. But he hides that matter from his
+          father.
+        </p>
+      </div>
+    </div>
+    <div class="card col-lg-4 col-md-6 col-12">
+      <img class="card-img-top" src="assets/images/srm.jpeg" alt="Card image cap">
+      <img class="card-img-top" src="assets/images/srm-friends.jpeg" alt="Card image cap">
+      <div class="card-body">
+        <p class="card-text">Now our hero started studying B.Tech in SRM University in Civil Engineering branch.
+          Actually his dream is an Architect but due to some suggestions he opted Civil. Meanwhile his father came to
+          know his EAMCET result and beat him badly 😢. But ya in university he got friends for life and he has best
+          memories. suddenly he came to know that his grand father also passed away. He was schocked and felt so bad 😭.
+          With the help of his friends he forgot all the pain and started leading normal. But due to one incident
+          happened in bus he stopped talking with strangers 😜.
+        </p>
+      </div>
+    </div>
+    <div class="card col-lg-4 col-md-6 col-12">
+      <img class="card-img-top" src="assets/images/bike.jpg" alt="Card image cap">
+      <img class="card-img-top" src="assets/images/graduation.jpg" alt="Card image cap">
+      <div class="card-body">
+        <p class="card-text">He likes bikes very much. So he bought bike secretly without the knowledge of his parents
+          and started going to college like a hero(Arjun Reddy 😜) 🚴. He always wears branded dresses and gadgets and
+          he is like a don for his batch🤠. Birthday parties, one night study, batch outings all came to an end. He
+          completed his B.Tech and got graduated 👨‍🎓.
+        </p>
+      </div>
+    </div>
+    <div class="card col-lg-4 col-md-6 col-12">
+      <img class="card-img-top" src="assets/images/site.jpg" alt="Card image cap">
+      <div class="card-body">
+        <p class="card-text">Some one said that life is a roller coaster. It is exactly true. Till now our hero don't
+          know any struggles or difficulties. But everything will not be in our hands. He started searching for jobs, as
+          he graduated as a Civil Engineer, he didn't get job in IT industry 👨‍💻 easily. He thought to join job in
+          core side. So he joined as a Junior Civil Engineer 👷, then the real life struggles started. All the luxuries
+          vanished away. He got sun stroke, body pains and many health issues as he worked in site irrespective of rain
+          ⛈️ or shine 🌞. He won't have proper food 🍲 and bed 🛏️. Sometimes he used to eat the food supplied to
+          workers and sleep in crane 🏗️. He don't know where his life is going, he is in dilemma. Finally he decided to
+          resign this site work and want to join MBA.
+        </p>
+      </div>
+    </div>
+    <div class="card col-lg-4 col-md-6 col-12">
+      <img class="card-img-top" src="assets/images/noida.jpg" alt="Card image cap">
+      <div class="card-body">
+        <p class="card-text">He joined MBA in RICS Amity University, Noida 🧑‍🏫. He came to his normal life. He used to
+          live in an gated community apartment with a cook. Because he tried to cook but he himself can't eat that 😜.
+          Suddenly one day he got a call from EY company for a job oppurtunity as Pega Developer. He casually attends
+          the company but out of surprise he got selected. He is very happy and without any second thought he
+          dis-continued the MBA and came back to join job.
+        </p>
+      </div>
+    </div>
+    <div class="card col-lg-4 col-md-6 col-12">
+      <img class="card-img-top" src="assets/images/EY.jpg" alt="Card image cap">
+      <img class="card-img-top" src="assets/images/EY-firstday.jpg" alt="Card image cap">
+      <div class="card-body">
+        <p class="card-text">Our hero joined the company with lot of excitement, he got accommodation in a 5-star hotel
+          during initial days. He chilled out gracefully and soon completed his training. Finally he joined in project,
+          he did lot of hard work, worked late nights, learnt lot of things and got appreciation from on-site and
+          off-shore team for being pro-active. He got hike and recognized in the ODC. He tried to shift the company with
+          the knowledge he gained but EY doesn't want him to go, so they retained him and again gave good hike and
+          promotion.
+        </p>
+      </div>
+    </div>
+    <div class="card col-lg-4 col-md-6 col-12">
+      <img class="card-img-top" src="assets/images/prayer.jpg" alt="Card image cap">
+      <img class="card-img-top" src="assets/images/engagement.JPG" alt="Card image cap">
+      <div class="card-body">
+        <p class="card-text">For his prayers and all the blessings from lord Siva he got enagaged with a beatiful,
+          intelligent, soft and kind hearted girl 😜. The day she saw our hero, it's a magical moment for her. She lost
+          her logical thinking and got speechless. They both have good compaitibility, there opinions got matched and
+          built a great rapo. Within no time they found love between each other 💑.
+        </p>
+      </div>
+    </div>
+    <div class="card col-lg-4 col-md-6 col-12">
+      <img class="card-img-top" src="assets/images/marriage.JPG" alt="Card image cap">
+      <img class="card-img-top" src="assets/images/thali.JPG" alt="Card image cap">
+      <div class="card-body">
+        <p class="card-text">27 January 2023, a memorable and great mile stone in their life's. They both tied knot and
+          married 🔥. From then onwards, two persons became one, two souls combined into one. All the jokes, fightings,
+          sarcasms every momemt is special to them. To the world he may be one person, but to her, he is the world. He
+          is the love of her life 💖. They pinky promoised each other to be together and hold each hands through all the
+          ups and downs and support each other to built the career they dreamed for 💞.
+        </p>
+      </div>
+    </div>
+    <div class="arrow-container">
+      <img class="arrow" src="assets/images/love-arrow.png" (click)="navigateToWishes()" />
+    </div>
+  </div>
+</div>
+<div *ngIf="showRouter">
+  <router-outlet></router-outlet>
 </div>
