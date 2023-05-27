@@ -1,6 +1,6 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import {Howl, Howler} from 'howler';
+import { Howl, Howler } from 'howler';
 
 @Component({
   selector: 'app-root',
@@ -13,24 +13,32 @@ export class AppComponent implements OnInit, OnDestroy {
   showCards: boolean = false;
   showRouter: boolean;
 
-  constructor(public router: Router){}
+  constructor(public router: Router) { }
 
-  sound = new Howl({ src: ['assets/images/audio.mpeg'], html5 :true });
+  sound = new Howl({ src: ['assets/images/audio.mpeg'], html5: true });
 
   ngOnInit(): void {
-    setTimeout(() => {
-      this.showLoader = false;
-      this.showCards = false;
-    }, 5000);
-    this.sound.play();
+    //     setTimeout(() => {
+    //       this.showLoader = false;
+    //       this.showCards = false;
+    //     }, 5000);
+    //     let element:HTMLElement = document.getElementById('.container') as HTMLElement;
+
+    // element.click();
+
 
     // Change global volume.
     Howler.volume(0.5);
   }
+  onloaderClick() {
+    this.showLoader = false;
+    this.showCards = false;
+    this.sound.play();
+  }
   navigateToProfile() {
     this.showCards = true;
   }
-  navigateToWishes(){
+  navigateToWishes() {
     this.showRouter = true;
     this.showCards = false;
     this.router.navigateByUrl('wishes');

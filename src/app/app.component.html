@@ -1,6 +1,7 @@
 <div class="container">
   <div class="col-lg-6 col-4" *ngIf="showLoader && !showCards">
-    <img class="center" src="assets/images/loading_love.png" />
+    <img class="centerImg" src="assets/images/heart.jpg" (click)="onloaderClick()"/>
+    <p class="msg">Please click on "Heart" to continue</p>
   </div>
   <div class="col-lg-6 col-4" *ngIf="!showLoader && !showCards && !showRouter">
     <img class="imgStyle" src="assets/images/beach-sea.jpg" />
