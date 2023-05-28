@@ -34,6 +34,9 @@ export class AppComponent implements OnInit, OnDestroy {
     this.showLoader = false;
     this.showCards = false;
     this.sound.play();
+    setTimeout(() => {
+      this.showCards = true;
+    }, 2000);
   }
   navigateToProfile() {
     this.showCards = true;
